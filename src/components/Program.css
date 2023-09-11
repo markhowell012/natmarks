@@ -1,0 +1,98 @@
+/* Program.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.programs {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.programs h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 28px;
+}
+
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.program-card {
+    flex: 0 0 calc(33.3333% - 10px);
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform .2s ease-in-out;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.program-card h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #444;
+}
+
+.program-card p {
+    padding: 0 10px;
+    color: #777;
+    font-size: 16px;
+}
+
+.more-info {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-info p {
+    font-size: 20px;
+    color: #444;
+}
+
+.more-info button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.more-info button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive for smaller devices */
+@media only screen and (max-width: 768px) {
+    .program-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .program-card {
+        flex: 0 0 100%;
+    }
+}

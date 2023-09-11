@@ -1,0 +1,42 @@
+.qualificationWrapper {
+    padding: 10px 4%;
+    display: flex;
+    background-color: rgb(240,240,240);
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .titleWrapper h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .criteriaWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .criteriaItem {
+    padding-right: 3%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .criteriaItem img {
+    margin-right: 1rem;
+    height: 32px;
+    width: 32px;
+  }
+  
+  .criteriaItem h4 {
+    white-space: pre;
+    font-size: 1rem;
+  }
+  

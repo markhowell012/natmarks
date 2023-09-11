@@ -1,0 +1,100 @@
+.aboutUsContainer {
+    max-width: 100%;
+    padding-bottom: 2rem;
+    background-color: lightblue;
+}
+
+.aboutUsInner {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUsContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.aboutUsImageWrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.aboutUsDecorativeImg {
+    width: 100%;
+    display: block;
+}
+
+.aboutUsText {
+    flex: 1;
+    margin-top: -0.5rem;
+    padding: 0 1rem;
+}
+
+.aboutUsTitle {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 3.125rem;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+}
+
+.aboutUsDescription {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.aboutUsTeamImgWrap {
+    padding-top: 1rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUsTeamImageHolder {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutUsTeamImg {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Responsive styles */
+
+@media screen and (min-width: 768px) {
+    .aboutUsContent {
+        flex-direction: row;
+        padding: 1rem 3rem;
+    }
+
+    .aboutUsText {
+        padding-right: 1rem;
+        flex: 1;
+    }
+
+    .aboutUsTeamImgWrap {
+        flex: 1;
+        padding-left: 1rem;
+    }
+
+    .aboutUsTitle {
+        font-size: 2rem;
+    }
+
+    .aboutUsDescription {
+        font-size: 1.25rem;
+    }
+}

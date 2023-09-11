@@ -1,0 +1,103 @@
+/* AboutTeam.css */
+
+.at-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.at-team-section, .at-application-form, .at-office-hours {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.at-team-section h2, 
+.at-application-form h3,
+.at-office-hours h2 {
+    margin-top: 0;
+    border-bottom: 3px solid #0077cc;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+    color: #333;
+}
+
+.at-team-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.at-team-section li {
+    padding: 12px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 500;
+}
+
+.at-team-section li:last-child {
+    border-bottom: none;
+}
+
+.at-application-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.at-application-form input,
+.at-application-form button {
+    flex: 1;
+    padding: 12px 15px;
+    margin-top: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+.at-application-form button {
+    background-color: #0077cc;
+    color: #ffffff;
+    cursor: pointer;
+    flex: none; /* This ensures the button doesn't grow with the inputs */
+    transition: background-color 0.2s ease;
+}
+
+.at-application-form button:hover {
+    background-color: #005fa3;
+}
+
+.at-application-form p {
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #888;
+}
+
+.at-office-hours a {
+    display: block;
+    color: #0077cc;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.at-office-hours address {
+    font-style: normal;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .at-application-form form {
+        flex-direction: column;
+    }
+
+
+}

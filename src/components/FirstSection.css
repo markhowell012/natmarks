@@ -1,0 +1,77 @@
+.section-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-inner {
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.header-bg {
+    background-color: #e6f7ff; /* Sample light blue color */
+    padding: 8px 5px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 24px;
+    }
+}
+
+.decorative-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Allow the image to adjust its height proportionally */
+}
+
+.text-content {
+    margin-top: 16px;
+}
+
+.text-content h1 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 2.875rem;
+    line-height: 3.125rem;
+}
+
+.text-content h3 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-content figure {
+    margin-bottom: -40px; 
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
