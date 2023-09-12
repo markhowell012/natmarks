@@ -27,7 +27,7 @@ function FooterComponent() {
                         <h5 className="section-title">Solutions</h5>
                         <nav className="nav-links">
                             <p onClick={handleBusinessCreditClick} href="/" className="link">Business credit</p>
-                            <a href="/" className="link">Partners</a>
+                            <p className="link">Partners</p>
                             <p onClick={handleInsightsClick} className="link">Insights</p>
                         </nav>
                     </div>
@@ -35,22 +35,22 @@ function FooterComponent() {
                     <div className="column">
                         <h5 className="section-title">Resources</h5>
                         <nav className="nav-links">
-                            <a href="/" className="link">Business Funding Guide</a>
-                            <a href="/" className="link">Business Line of Credit</a>
-                            <a href="/" className="link">Partner Marketplace</a>
-                            <a href="/" className="link">Resources Library</a>
-                            <a href="/" className="link">Blog</a>
+                            <p className="link">Business Funding Guide</p>
+                            <p className="link">Business Line of Credit</p>
+                            <p className="link">Partner Marketplace</p>
+                            <p className="link">Resources Library</p>
+                            <p className="link">Blog</p>
                         </nav>
                     </div>
 
                     <div className="column">
                         <h5 className="section-title">Get in touch</h5>
                         <nav className="nav-links">
-                            <a href=":8555727707" className="link">Questions: (404)-920-4946</a>
-                            <a href="://help.fundbox.com/hc/en-us" className="link">Help Center</a>
-                            <a href="//" className="link">About</a>
-                            <a href="//press/" className="link">Press</a>
-                            <a href="//" className="link">Careers</a>
+                            <p className="link">Questions: (404)-920-4946</p>
+                            <p className="link">Help Center</p>
+                            <p className="link">About</p>
+                            <p className="link">Press</p>
+                            <p className="link">Careers</p>
                         </nav>
                     </div>
 
@@ -71,10 +71,10 @@ function FooterComponent() {
                 <section className="footer-bottom">
                     <div className="white-bar"></div>
                     <nav className="bottom-nav">
-                        <a href="//" className="bottom-link">Terms of Use</a>
-                        <a href="//" className="bottom-link">Privacy Policy</a>
-                        <a href="//" className="bottom-link">Disclaimers</a>
-                        <a href="/-businesses/" className="bottom-link">Prohibited Businesses</a>
+                        <p className="bottom-link">Terms of Use</p>
+                        <p className="bottom-link">Privacy Policy</p>
+                        <p className="bottom-link">Disclaimers</p>
+                        <p className="bottom-link">Prohibited Businesses</p>
                     </nav>
                 </section>
             </div>
