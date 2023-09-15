@@ -64,6 +64,8 @@
   
   .bottom-nav {
     font-size: 0.875rem;
+    display: flex;
+    
   }
   
   .bottom-link {
