@@ -10,10 +10,10 @@ const BusinessCreditComponent = () => {
     <div className="business-container">
       <div className="business-content">
         <h1 className="business-title">
-          Get a business line of credit up to $150k*
+          Get a business line of credit up to $1,000,000
         </h1>
         <h3 className="business-description">
-          Apply for a Fundbox Line of Credit to help with expenses like payroll, buying inventory, purchasing raw materials, maintenance, and more.
+          Apply for a GFN Capital Line of Credit to help with expenses like payroll, buying inventory, purchasing raw materials, maintenance, and more.
         </h3>
         <a target="_blank" rel="noopener noreferrer" href="/" className="business-apply-btn">
           Apply Now

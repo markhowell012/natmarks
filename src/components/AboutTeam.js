@@ -1,18 +1,38 @@
-// AboutTeam.jsx
 import React from 'react';
 import './AboutTeam.css';
+import jimmy from '../images/jimmy.jpg';
+import chris from '../images/chris.jpg';
+import tony from '../images/tony.jpg';
+import don from '../images/don.jpg';
+import alex from '../images/alex.jpeg';
+import james from '../images/james.webp';
+import diana from '../images/diana.webp';
 
 function AboutTeam() {
   return (
     <div className="at-container">
-      
       <section className="at-team-section">
         <h2>Our Team</h2>
-        <ul>
-          <li>Founder - Chris Chutter</li>
-          <li>CEO - Tony Carso</li>
-          <li>CFO - Gary Hudson</li>
-          <li>Head Underwriter - Don Walker</li>
+        <ul className="team-list">
+          {[{ img: chris, alt: "Chris Chutter", title: "CEO", name: "Chris Chutter" },
+            { img: tony, alt: "Tony Carso", title: "VP Of Sales", name: "Tony Carso" },
+            { img: don, alt: "Don Walker", title: "Head Underwriter", name: "Don Walker" },
+            { img: jimmy, alt: "Alex Star", title: "Line Of Credit Operator", name: "Alex Star" },
+            { img: alex, alt: "Jimmy Cook", title: "Funding Manager", name: "Jimmy Cook" },
+            { img: james, alt: "Bill Baker", title: "GM Of Banking", name: "Bill Baker" },
+            { img: diana, alt: "Diana Martinez", title: "Account Management", name: "Diana Martinez" }
+          ]
+            .map((member, index) => (
+              <li key={index} className="team-member">
+                <div className="image-wrapper">
+                  <img src={member.img} alt={member.alt} className="team-image" />
+                </div>
+                <div className="overlay">
+                  <span className="title">{member.title}</span>
+                  <span className="name">{member.name}</span>
+                </div>
+              </li>
+            ))}
         </ul>
       </section>
 
@@ -40,7 +60,6 @@ function AboutTeam() {
           {/* You can expand this list for each day's office hours */}
         </ul>
       </section>
-
     </div>
   );
 }
