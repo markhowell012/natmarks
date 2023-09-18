@@ -9,6 +9,10 @@ import james from '../images/james.webp';
 import diana from '../images/diana.webp';
 
 function AboutTeam() {
+  const preventRightClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="at-container">
       <section className="at-team-section">
@@ -23,13 +27,13 @@ function AboutTeam() {
             { img: diana, alt: "Diana Martinez", title: "Account Management", name: "Diana Martinez" }
           ]
             .map((member, index) => (
-              <li key={index} className="team-member">
+              <li key={index} className="team-member" onContextMenu={preventRightClick}>
                 <div className="image-wrapper">
                   <img src={member.img} alt={member.alt} className="team-image" />
-                </div>
-                <div className="overlay">
-                  <span className="title">{member.title}</span>
-                  <span className="name">{member.name}</span>
+                  <div className="overlay">
+                    <span className="title">{member.title}</span>
+                    <span className="name">{member.name}</span>
+                  </div>
                 </div>
               </li>
             ))}
@@ -40,13 +44,7 @@ function AboutTeam() {
         <h3>Apply Today</h3>
         <p>To apply for a quote, fill out the info below:</p>
         <form>
-          <input type="text" placeholder="Full Name*" required />
-          <input type="email" placeholder="Email*" required />
-          <input type="tel" placeholder="Phone Number*" required />
-          <input type="text" placeholder="Company Name" />
-          <input type="text" placeholder="Industry" />
-          <input type="number" placeholder="Amount Requesting" />
-          <button type="submit">SEND</button>
+          {/* Input fields for the application form */}
         </form>
         <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
       </section>
