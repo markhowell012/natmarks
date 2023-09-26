@@ -4,8 +4,14 @@ import SecondSection from '../components/SecondSection';
 import BusinessCreditSecondSection from './BusinessCreditSecondSection';
 import ladyYellow from '../images/lady grey yellow line.webp'
 import LocCalculator from './LocCalculator';
+import { useNavigate } from 'react-router-dom';
 
 const BusinessCreditComponent = () => {
+  const navigate = useNavigate()
+
+  function handleApplyNowClick() {
+    navigate('/application')
+  }
   return (
     <div className="business-container">
       <div className="business-content">
@@ -15,9 +21,9 @@ const BusinessCreditComponent = () => {
         <h3 className="business-description">
           Apply for a GFN Capital Line of Credit to help with expenses like payroll, buying inventory, purchasing raw materials, maintenance, and more.
         </h3>
-        <a target="_blank" rel="noopener noreferrer" href="/" className="business-apply-btn">
+        <p onClick={handleApplyNowClick} className="business-apply-btn">
           Apply Now
-        </a>
+        </p>
         <div className="business-note">
           *Credit line amounts, rates, and terms are based on creditworthiness and subject to change.
         </div>

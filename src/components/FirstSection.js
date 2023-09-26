@@ -1,8 +1,14 @@
 import React from 'react';
 import './FirstSection.css';
 import fundingPic from '../images/mobile_app-screenshots.png'
+import { useNavigate } from 'react-router-dom';
 
 const FirstSection = () => {
+
+    const navigate = useNavigate()
+    function handleGetStartedClick() {
+        navigate('/application')
+    }
     return (
         <section className="section-container">
             <div className="section-inner">
@@ -11,7 +17,7 @@ const FirstSection = () => {
                         <div className="text-content">
                             <h1>Working capital made simple.</h1>
                             <h3>Optimize your cash flow and manage expenses with a revolving line of credit up to $1,500,000. Apply today without impacting your credit score.</h3>
-                            <a target="_blank" href="/" className="cta-button">Get Started</a>
+                            <p onClick={handleGetStartedClick} href="/" className="cta-button">Get Started</p>
                         </div>
                         <div className="image-content">
                             <figure>

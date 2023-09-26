@@ -1,0 +1,106 @@
+
+  /* Style the logo */
+.application-logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.application-logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #114a88; /* Blue text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+/* Add a border and background to the logo for emphasis */
+.application-logo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF; /* Blue underline */
+    margin-top: 10px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .application-logo h1 {
+        font-size: 28px;
+    }
+}
+
+  
+  .application-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .application-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .input-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .text-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .text-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #357abd;
+  }
+  
+  .thank-you-message {
+    margin-top: 20px;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .application-form {
+      padding: 20px;
+    }
+  
+    .text-input,
+    .submit-button {
+      width: 100%;
+    }
+  }
+  
