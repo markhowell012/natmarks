@@ -19,6 +19,9 @@ function FooterComponent() {
         scrollToTop();
         navigate('/insights')
     }
+    function handlePartnersClick() {
+        navigate('/about')
+    }
     return (
         <footer className="footer">
             <div className="container">
@@ -27,15 +30,15 @@ function FooterComponent() {
                         <h5 className="section-title">Solutions</h5>
                         <nav className="nav-links">
                             <p onClick={handleBusinessCreditClick} href="/" className="link">Business credit</p>
-                            <p className="link">Partners</p>
-                            <p onClick={handleInsightsClick} className="link">Insights</p>
+                            <p onClick={handlePartnersClick} className="link">Partners</p>
+                            <p onClick={handleInsightsClick} className="link">Insights</p> 
                         </nav>
                     </div>
 
                     <div className="column">
                         <h5 className="section-title">Resources</h5>
                         <nav className="nav-links">
-                            <p className="link">Business Funding Guide</p>
+                            <p className="link">Business Funding Guide</p> 
                             <p className="link">Business Line of Credit</p>
                             <p className="link">Partner Marketplace</p>
                             <p className="link">Resources Library</p>
