@@ -1,0 +1,82 @@
+/* Signup.css */
+.signup-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .auth-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .signUpH2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .auth-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .auth-input {
+    width: 90%; /* Set width to 90% */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 auto; /* Center the input */
+    display: block; /* Make sure it's a block element to apply margin correctly */
+  }
+  
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .auth-button {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 400px) {
+    .auth-container {
+      width: 90%;
+    }
+  }
+  

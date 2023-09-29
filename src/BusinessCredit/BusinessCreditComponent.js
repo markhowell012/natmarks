@@ -2,7 +2,7 @@ import React from 'react';
 import './BusinessCreditComponent.css';
 import SecondSection from '../components/SecondSection';
 import BusinessCreditSecondSection from './BusinessCreditSecondSection';
-import ladyYellow from '../images/lady grey yellow line.webp'
+import ladyYellow from '../images/lady grey yellow line.png'
 import LocCalculator from './LocCalculator';
 import { useNavigate } from 'react-router-dom';
 

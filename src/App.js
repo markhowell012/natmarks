@@ -7,6 +7,7 @@ import InsightsContainer from "./components/insights/InsightsContainer";
 import BusinessCreditComponent from "./BusinessCredit/BusinessCreditComponent";
 import { Route, Routes } from "react-router-dom";
 import Application from "./components/Application";
+import SignUpLogin from "./components/signuplogin/SignUpLogin";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <Route path="/insights" element={<InsightsContainer />} />
       <Route path="/Business_Credit" element={<BusinessCreditComponent />} />
       <Route path="/application" element={<Application />} />
+      <Route path="/signup" element={<SignUpLogin />} />
       </Routes>
       <FooterComponent />
     </div>

@@ -9,7 +9,7 @@
 }
 
 .header-bg {
-    background-color: #e6f7ff; /* Sample light blue color */
+    background-color: #fdc9c9; /* Sample light blue color */
     padding: 8px 5px 24px;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,7 @@
 
 .text-content {
     margin-top: 16px;
+    text-align: center;
 }
 
 .text-content h1 {

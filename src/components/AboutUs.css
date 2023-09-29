@@ -1,7 +1,7 @@
 .aboutUsContainer {
     max-width: 100%;
     padding-bottom: 2rem;
-    background-color: lightblue;
+    background-color: rgb(244,244,244);
 }
 
 .aboutUsInner {
@@ -34,6 +34,7 @@
     flex: 1;
     margin-top: -0.5rem;
     padding: 0 1rem;
+    text-align: center;
 }
 
 .aboutUsTitle {

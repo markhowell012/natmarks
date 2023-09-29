@@ -3,13 +3,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #333;
+    background-color: #990000;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-left {
+.navbar-left h2 {
     font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+
 }
 
 .navbar-right {

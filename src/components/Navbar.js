@@ -18,10 +18,13 @@ const Navbar = () => {
     function handleLocClick() {
         navigate('/Business_Credit')
     }
+    function signInClick() {
+        navigate('/signup')
+    }
 
     return (
         <div className="navbar">
-            <div className="navbar-left">
+            <div onClick={handleHomeClick} className="navbar-left">
                 <h2>GFN Capital</h2>
             </div>
             <div className="navbar-right">
@@ -29,6 +32,7 @@ const Navbar = () => {
                 <p onClick={handleLocClick} className="nav-item clickable" href="/">LOC</p>
                 <p onClick={handleProgramClick} className="nav-item clickable" href="/programs">Programs</p>
                 <p className="nav-item clickable" onClick={handleTeamClick}>Company</p>
+                <p className="nav-item clickable" style={{whiteSpace: 'nowrap'}} onClick={signInClick}>Log In</p>
             </div>
         </div>
     );
