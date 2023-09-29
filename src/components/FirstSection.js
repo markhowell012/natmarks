@@ -21,7 +21,7 @@ const FirstSection = () => {
                         </div>
                         <div className="image-content">
                             <figure>
-                                <img src={fundingPic} alt="Fundbox working capital loan platform" />
+                                <img src={fundingPic} alt="GFN Capital working capital loan platform" />
                             </figure>
                         </div>
                     </div>
