@@ -10,6 +10,7 @@ const Application = () => {
         annualGrossIncome: '',
         requestedLoanAmount: '',
         phoneNumber: '',
+        loanType: '', // Add loanType field for the dropdown
     };
 
     const [formData, setFormData] = useState(initialFormData);
@@ -40,7 +41,7 @@ const Application = () => {
 
     return (
         <div className="application-container">
-            <div class="application-logo">
+            <div className="application-logo">
                 <h1>Business Loan Application</h1>
             </div>
             <form onSubmit={handleSubmit} className="application-form">
@@ -71,6 +72,18 @@ const Application = () => {
                 <label className="input-label">
                     Phone Number:
                     <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} className="text-input" />
+                </label>
+                {/* Add the dropdown for loanType */}
+                <label className="input-label">
+                    Loan Type:
+                    <select name="loanType" value={formData.loanType} onChange={handleInputChange} className="text-input">
+                        <option value="">Select Loan Type</option>
+                        <option value="MCA">MCA</option>
+                        <option value="Term Loan">Term Loan</option>
+                        <option value="SML">SML</option>
+                        <option value="Consolidations">Consolidations</option>
+                        <option value="Merchant Line of Credit">Merchant Line of Credit</option>
+                    </select>
                 </label>
                 <button type="submit" className="submit-button">Submit</button>
             </form>

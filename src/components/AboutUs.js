@@ -14,7 +14,7 @@ const AboutUs = () => {
                     </div>
                     <div className="aboutUsTeamImgWrap">
                         <figure className="aboutUsTeamImageHolder">
-                            <img src={teamPic} alt="Fundbox" className="aboutUsTeamImg" />
+                            <img src={teamPic} alt="GFN Capital" className="aboutUsTeamImg" />
                         </figure>
                     </div>
                 </div>

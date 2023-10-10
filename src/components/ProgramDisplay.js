@@ -38,8 +38,8 @@ function ProgramDisplay() {
         },
     ];
 
-    function handleFindOutMore(){
-        navigate('/')
+    function handleApplyNow(){
+        navigate('/application')
     }
     return (
         <div className="programs">
@@ -50,8 +50,8 @@ function ProgramDisplay() {
                 ))}
             </div>
             <div className="more-info">
-                <p>Want to find out more?</p>
-                <button onClick={handleFindOutMore}>Click to Find Out More</button>
+                <p>Interested in Applying for a Business Loan?</p>
+                <button onClick={handleApplyNow}>Apply Now</button>
             </div>
         </div>
     );

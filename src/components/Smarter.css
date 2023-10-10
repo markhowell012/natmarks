@@ -1,0 +1,68 @@
+/* Smarter.css */
+
+/* Base styles */
+.row-smarter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background for overall section */
+}
+
+.column-smarter {
+    flex-basis: calc(33.33% - 20px); /* subtracting for margin */
+    margin: 10px;
+    background-color: #fff;
+    transition: transform 0.2s; /* smooth hover effect */
+}
+
+.column-smarter:hover {
+    transform: translateY(-5px); /* subtle lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* add shadow on hover */
+}
+
+.blurb-smarter {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.icon-smarter {
+    font-size: 40px; /* larger icon size */
+    color: #007BFF; /* a professional blue */
+    margin-bottom: 15px; /* spacing between icon and text */
+}
+
+.blurb-container-smarter h4 {
+    font-weight: 600; /* making the title bold */
+    margin-bottom: 10px; /* spacing */
+}
+
+.blurb-container-smarter p {
+    line-height: 1.5; /* readability */
+}
+
+.blurb-container-smarter a {
+    color: #007BFF;
+    text-decoration: underline; /* clear indication of a link */
+    transition: color 0.2s; /* smooth color transition for hover */
+}
+
+.blurb-container-smarter a:hover {
+    color: #0056b3; /* slightly darker blue on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .column-smarter {
+        flex-basis: calc(50% - 20px); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .column-smarter {
+        flex-basis: 100%; /* 1 column on mobile devices */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

@@ -12,6 +12,8 @@
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+    white-space: nowrap;
+
 
 }
 
@@ -38,7 +40,13 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+.menu-icon {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media (max-width: 650px) {
     .navbar {
         flex-direction: column;
     }
@@ -49,5 +57,28 @@
 
     .nav-item {
         margin: 5px 0;
+    }
+    .navbar-right {
+        display: none; /* Initially hidden in mobile */
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 100%;
+        left: 0;
+        background-color: #990000;
+        border-top: 2px solid;
+        opacity: 0;  /* Initially invisible */
+        transform: translateY(-20px);  /* Initially positioned slightly upwards */
+        transition: opacity 0.3s, transform 0.3s;  /* Transition effects */
+    }
+
+    .navbar-right.active {
+        display: flex; /* Show when the hamburger menu is clicked */
+        opacity: 1;  /* Fully visible */
+        transform: translateY(0);  /* Reset to its default position */
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon in mobile */
     }
 }

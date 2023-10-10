@@ -1,166 +1,188 @@
 .at-container {
-    font-family: 'Arial', sans-serif;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f7f9fc;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  }
-  
-  .at-team-section,
-  .at-application-form,
-  .at-office-hours {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 20px 30px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .at-team-section h2,
-  .at-application-form h3,
-  .at-office-hours h2 {
-    margin-top: 0;
-    border-bottom: 3px solid #0077cc;
-    padding-bottom: 15px;
-    font-size: 1.6em;
-    color: #333;
-  }
-  
-  /* Additional and Updated Styles for the Team Section */
-  
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.at-team-section,
+.at-application-form,
+.at-office-hours {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.at-team-section h2,
+.at-application-form h3,
+.at-office-hours h2 {
+  margin-top: 0;
+  border-bottom: 3px solid #0077cc;
+  padding-bottom: 15px;
+  font-size: 1.6em;
+  color: #333;
+}
+
+/* Additional and Updated Styles for the Team Section */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.team-member {
+  width: calc(33.3333% - 20px);
+  /* 3 columns */
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.image-wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  /* 1:1 aspect ratio */
+}
+
+.team-image {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Initially align to the bottom */
+  align-items: center;
+}
+
+.overlay .title,
+.overlay .name {
+  display: block;
+  font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay .title {
+  font-weight: 700;
+}
+
+.team-member:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* White with opacity */
+  color: #333;
+  /* Change text color */
+  justify-content: center;
+  /* Center vertically on hover */
+}
+
+.team-member:hover .overlay .title,
+.team-member:hover .overlay .name {
+  font-size: 1em;
+  /* Adjust size if needed */
+}
+
+/* Application Form and Other Sections */
+
+.at-application-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.at-application-form input {
+  flex: 1;
+  padding: 12px 15px;
+  margin-top: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  font-size: 0.95em;
+}
+
+
+
+.at-application-form p {
+  margin-top: 10px;
+  font-size: 0.85em;
+  color: #888;
+}
+
+.at-office-hours a {
+  display: block;
+  color: #0077cc;
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.at-office-hours address {
+  font-style: normal;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #555;
+}
+
+.aboutClickHere {
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Make the button even more beautiful */
+.aboutClickHere:hover {
+  background-color: #0077b6; /* A different hover color */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the text inside the button */
+.aboutClickHere:focus {
+  outline: none;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
   .team-member {
-    width: calc(33.3333% - 20px); /* 3 columns */
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    width: calc(50% - 20px);
+    /* 2 columns */
   }
-  
-  .image-wrapper {
-    position: relative;
-    padding-bottom: 100%; /* 1:1 aspect ratio */
-  }
-  
-  .team-image {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 12px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;  /* Initially align to the bottom */
-    align-items: center;
-  }
-  
-  .overlay .title,
-  .overlay .name {
-    display: block;
-    font-size: 0.9em;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .overlay .title {
-    font-weight: 700;
-  }
-  .team-member:hover .overlay {
-    background-color: rgba(255, 255, 255, 0.8);  /* White with opacity */
-    color: #333;  /* Change text color */
-    justify-content: center;  /* Center vertically on hover */
-  }
-  
-  .team-member:hover .overlay .title,
-  .team-member:hover .overlay .name {
-    font-size: 1em;  /* Adjust size if needed */
-  }
-  
-  /* Application Form and Other Sections */
-  
+
   .at-application-form form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
   }
-  
-  .at-application-form input,
-  .at-application-form button {
-    flex: 1;
-    padding: 12px 15px;
-    margin-top: 10px;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-    font-size: 0.95em;
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    width: 100%;
+    /* 1 column */
   }
-  
-  .at-application-form button {
-    background-color: #0077cc;
-    color: #ffffff;
-    cursor: pointer;
-    flex: none;
-    transition: background-color 0.2s ease;
-  }
-  
-  .at-application-form button:hover {
-    background-color: #005fa3;
-  }
-  
-  .at-application-form p {
-    margin-top: 10px;
-    font-size: 0.85em;
-    color: #888;
-  }
-  
-  .at-office-hours a {
-    display: block;
-    color: #0077cc;
-    text-decoration: none;
-    margin-top: 15px;
-    font-weight: 500;
-  }
-  
-  .at-office-hours address {
-    font-style: normal;
-    margin-top: 15px;
-    font-weight: 500;
-    color: #555;
-  }
-  
-  /* Responsive Styles */
-  
-  @media (max-width: 768px) {
-    .team-member {
-      width: calc(50% - 20px); /* 2 columns */
-    }
-    
-    .at-application-form form {
-      flex-direction: column;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .team-member {
-      width: 100%; /* 1 column */
-    }
-  }
-  
+}

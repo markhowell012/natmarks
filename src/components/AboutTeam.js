@@ -7,11 +7,20 @@ import don from '../images/don.jpg';
 import alex from '../images/alex.jpeg';
 import james from '../images/james.webp';
 import diana from '../images/diana.webp';
+import { useNavigate } from 'react-router-dom';
 
 function AboutTeam() {
+
+  const navigate = useNavigate()
+
   const preventRightClick = (e) => {
     e.preventDefault();
   };
+
+  function handleApplyForQuoteClick() {
+    navigate('/application')
+  }
+
 
   return (
     <div className="at-container">
@@ -42,10 +51,7 @@ function AboutTeam() {
 
       <section className="at-application-form">
         <h3>Apply Today</h3>
-        <p>To apply for a quote, fill out the info below:</p>
-        <form>
-          {/* Input fields for the application form */}
-        </form>
+        <p>To apply for a quote: <button onClick={handleApplyForQuoteClick} className='aboutClickHere'>Click Here</button></p>
         <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
       </section>
 
