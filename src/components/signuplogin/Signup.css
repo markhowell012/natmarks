@@ -35,22 +35,21 @@
   }
   
   .auth-input {
-    width: 90%; /* Set width to 90% */
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    margin: 0 auto; /* Center the input */
-    display: block; /* Make sure it's a block element to apply margin correctly */
+    margin: 0 auto;
+    display: block;
   }
-  
   
   .button-container {
     margin-top: 20px;
   }
   
   .auth-button {
-    background-color: #990000;
+    background-color: #007bff; /* Change button color */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -72,6 +71,13 @@
     font-size: 14px;
     display: inline-block;
     margin-top: 10px;
+  }
+  
+  /* Add styles for the error message */
+  .error-message {
+    color: #ff0000; /* Change error message color to red */
+    font-size: 18px;
+    margin-top: 20px;
   }
   
   @media (max-width: 400px) {

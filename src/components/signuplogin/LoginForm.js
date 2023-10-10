@@ -1,11 +1,24 @@
-// LoginForm.js
-import React from 'react';
-import './Signup.css'
+import React, { useState } from 'react';
+import './Signup.css';
 
 const LoginForm = ({ onSwitch }) => {
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
+
+    // Simulate login logic for demonstration purposes
+    // Replace this with your actual login logic
+    const email = e.target.querySelector("#login-email").value;
+    const password = e.target.querySelector("#login-password").value;
+
+    if (email === "your_correct_email" && password === "your_correct_password") {
+      // Successful login, you can navigate to another page or set a flag to indicate successful login
+      console.log("Login successful");
+    } else {
+      // Incorrect login, show error message
+      setShowErrorMessage(true);
+    }
   };
 
   return (
@@ -41,6 +54,11 @@ const LoginForm = ({ onSwitch }) => {
           </p>
         </div>
       </form>
+
+      {/* Display error message when showErrorMessage is true */}
+      {showErrorMessage && (
+        <p className="error-message">Incorrect username or password</p>
+      )}
     </div>
   );
 };
