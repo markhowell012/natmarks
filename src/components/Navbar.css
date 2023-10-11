@@ -7,6 +7,17 @@
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Add this to your CSS */
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #990000;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
 
 .navbar-left h2 {
     font-weight: bold;

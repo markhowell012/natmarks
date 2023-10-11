@@ -1,5 +1,5 @@
 
-  /* Style the logo */
+
 .application-logo {
     text-align: center;
     padding: 20px 0;
@@ -8,7 +8,7 @@
 .application-logo h1 {
     font-size: 36px;
     font-weight: bold;
-    color: #114a88; /* Blue text color */
+    color: #eff3f7; /* Blue text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
 }
 
@@ -31,14 +31,21 @@
 }
 
   
-  .application-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
+.application-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/skyscraper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
   .application-form {
     width: 100%;
     max-width: 500px;

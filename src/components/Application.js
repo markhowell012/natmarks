@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Application.css';
+import PhoneApp from './PhoneApp';
 
 const Application = () => {
     const initialFormData = {
@@ -40,6 +41,7 @@ const Application = () => {
     };
 
     return (
+        <>
         <div className="application-container">
             <div className="application-logo">
                 <h1>Business Loan Application</h1>
@@ -89,6 +91,9 @@ const Application = () => {
             </form>
             {isSubmitted && <p className="thank-you-message">Thank you, your application has been submitted.</p>}
         </div>
+        <PhoneApp />
+        </>
+
     );
 };
 

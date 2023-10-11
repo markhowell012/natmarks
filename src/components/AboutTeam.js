@@ -57,7 +57,7 @@ function AboutTeam() {
 
       <section className="at-office-hours">
         <h2>GFN Capital</h2>
-        <address>55 Water St, Manhattan, NY 10038</address>
+        <address>55 Water St, New York, NY 10038</address>
         <a href="mailto:Info@gfncapital.com">Info@gfncapital.com</a>
         <a href="tel:404-920-4946">404-920-4946</a>
         <ul>
