@@ -11,6 +11,10 @@ const FirstSection = () => {
         navigate('/application');
     }
 
+    function preventRightClick(e) {
+        e.preventDefault()
+    }
+
     return (
         <section className="section-container">
             <div className="section-inner">
@@ -24,7 +28,7 @@ const FirstSection = () => {
                         </div>
                         <div className="image-content">
                             <figure>
-                                <img src={fundingPic} alt="GFN Capital working capital loan platform" />
+                                <img onContextMenu={preventRightClick} src={fundingPic} alt="GFN Capital working capital loan platform" />
                             </figure>
                         </div>
                     </div>
