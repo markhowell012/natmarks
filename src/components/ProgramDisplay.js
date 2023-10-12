@@ -6,6 +6,7 @@ import termPic from '../images/termloanpic.webp'
 import smlPic from '../images/smlpic.webp'
 import consolidationsPic from '../images/consolidations.webp'
 import mloc from '../images/mloc.webp'
+import equity from '../images/equity.jpg'
 import { useNavigate } from 'react-router-dom'
 
 function ProgramDisplay() {
@@ -36,11 +37,17 @@ function ProgramDisplay() {
             clickDescription: "Navigate through your financial obligations effortlessly with our Consolidation services, facilitating up to 5M. Designed to streamline your debts, our offering transforms multiple liabilities into a single, manageable monthly payment. Our aim is to alleviate financial complexities, ensuring you retain a sharp focus on your business aspirations while maintaining balanced financial health, thus providing you with a simplified, strategic path towards fiscal stability and growth."
         },
         {
-            title: 'Merchant Line of Credit',
+            title: 'Equity Financing',
+            description: 'Unleash Potential through our Equity Financing',
+            image: equity,
+            clickDescription: "Embark on a journey of boundless possibilities with our Equity Financing solutions. Designed to unlock your business's true potential, we offer a platform where your visions are not just supported, but also shared. By converting your valuable equity into working capital, we provide a robust financial springboard, enabling you to launch forward, be it through expanding operations, innovating products, or exploring new markets."
+        },
+        {
+            title: 'Merchant Line of Credit', 
             description: '12-24 month term Up to 4M: Reliable credit line to meet fluctuating business demands.',
             image: mloc,
             clickDescription: "Secure your business operations with our Merchant Line of Credit, offering up to 4M for a 12-24 month term. Crafted to adeptly navigate through fluctuating business demands, this credit line provides immediate access to funds, ensuring you can seize opportunities and manage challenges with financial confidence and strategic ease. Your pathway to flexible and reliable financial management starts here."
-        },
+        }
     ];
 
     function handleApplyNow(){
