@@ -98,6 +98,7 @@
     color: #4a90e2;
     font-weight: bold;
     font-size: 18px;
+    text-align: center;
   }
   
   @media screen and (max-width: 600px) {

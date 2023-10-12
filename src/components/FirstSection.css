@@ -11,7 +11,7 @@
 }
 
 .header-bg {
-    background-color: #fdc9c9; /* Sample light blue color */
+    background: linear-gradient(to bottom, #fde0e0, #fdc4c9);
     padding: 8px 5px 24px;
     display: flex;
     flex-direction: column;

@@ -8,6 +8,7 @@ import BusinessCreditComponent from "./BusinessCredit/BusinessCreditComponent";
 import { Route, Routes } from "react-router-dom";
 import Application from "./components/Application";
 import SignUpLogin from "./components/signuplogin/SignUpLogin";
+import './App.css'
 function App() {
   return (
     <div className="App">
