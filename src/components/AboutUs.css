@@ -1,102 +1,63 @@
 .aboutUsContainer {
     max-width: 100%;
-    padding-bottom: 2rem;
-    background-color: rgb(244,244,244);
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    padding-top: 100px;
+
 }
 
 .aboutUsInner {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 .aboutUsContent {
     display: flex;
     flex-direction: column;
-    position: relative;
+    gap: 1rem;
     align-items: center;
-}
-
-.aboutUsImageWrap {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.aboutUsDecorativeImg {
-    width: 100%;
-    display: block;
-}
-
-.aboutUsText {
-    flex: 1;
-    margin-top: -0.5rem;
-    padding: 0 1rem;
     text-align: center;
+}
+
+.aboutUsText h1,
+.aboutUsText p {
+    margin: 0;
 }
 
 .aboutUsTitle {
     font-weight: 700;
-    font-size: 2.875rem;
-    line-height: 3.125rem;
-    margin-bottom: 1rem;
-    white-space: pre-line;
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 0.5rem;
 }
 
 .aboutUsDescription {
     font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1.125rem;
+    color: #555555;
     max-width: 600px;
-    margin-bottom: 1rem;
 }
 
 .aboutUsTeamImgWrap {
-    padding-top: 1rem;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.aboutUsTeamImageHolder {
     width: 100%;
+    max-width: 400px;
     overflow: hidden;
-    position: relative;
-}
-
-.aboutUsTeamImg {
-    width: 22rem;
-    display: block;
-    object-fit: cover;
     border-radius: 0.5rem;
 }
 
-/* Responsive styles */
+.aboutUsTeamImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
 @media screen and (min-width: 768px) {
     .aboutUsContent {
         flex-direction: row;
-        padding: 1rem 3rem;
-    }
-
-    .aboutUsText {
-        padding-right: 1rem;
-        flex: 1;
-    }
-
-    .aboutUsTeamImgWrap {
-        flex: 1;
-        padding-left: 1rem;
-    }
-
-    .aboutUsTitle {
-        font-size: 2rem;
-    }
-
-    .aboutUsDescription {
-        font-size: 1.25rem;
+        gap: 2rem;
+        align-items: flex-start;
+        text-align: left;
     }
 }

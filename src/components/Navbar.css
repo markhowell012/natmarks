@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 .navbar {
+    position: fixed; /* or position: sticky; */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Ensure it takes full width */
+    z-index: 1000; /* Ensures it stays above all other elements */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #AA0000;
+    padding: 15px 0px;  
+    background-color: #2c3e50; 
     color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Quicksand', sans-serif;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.3s;
 }
-/* Add this to your CSS */
+
 .scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #AA0000;
-    z-index: 1000; /* Ensure it's above other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+    background-color: #1a252f;
+}
 
 .navbar-left h2 {
     font-weight: bold;
     cursor: pointer;
     user-select: none;
-    white-space: nowrap;
-
-
+    margin: 0;
+    padding-left: 10px;
 }
 
 .navbar-right {
@@ -38,62 +35,74 @@
 }
 
 .nav-item {
-    margin: 0 10px;
-    padding: 5px 10px;
+    background: none;
+    border: none;
+    margin: 0 15px;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
 }
 
 .nav-item:hover {
-    background-color: #444;
-    color: #ddd;
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
-.clickable {
-    cursor: pointer;
+.nav-item:active {
+    background-color: #2c3e50;
+}
+
+.nav-item:focus {
+    box-shadow: 0 0 0 3px rgba(52, 73, 94, 0.5);
 }
 
 .menu-icon {
-    display: none; /* Initially hidden */
+    display: none;
     cursor: pointer;
     font-size: 24px;
+    padding-right: 10px;
 }
 
-@media (max-width: 650px) {
+
+
+@media (max-width: 950px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .navbar-right {
-        margin-top: 10px;
+        display: none;
+        position: absolute; /* Make it absolute to overlay on top */
+        top: 60px; /* Position under the navbar, adjust according to your navbar height */
+        left: 0; /* Align to the left */
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Full width */
+        background-color: #2c3e50; /* Same as your navbar color */
+        transition: all 0.3s ease-in-out;
+        z-index: 1; /* Ensure it is displayed above other content */
+    }
+    
+    .navbar-right.active {
+        display: flex;
     }
 
     .nav-item {
-        margin: 5px 0;
-    }
-    .navbar-right {
-        display: none; /* Initially hidden in mobile */
-        flex-direction: column;
+        margin: 10px 0;
         width: 100%;
-        position: relative;
-        top: 100%;
-        left: 0;
-        background-color: #AA0000;
-        border-top: 2px solid;
-        opacity: 0;  /* Initially invisible */
-        transform: translateY(-20px);  /* Initially positioned slightly upwards */
-        transition: opacity 0.3s, transform 0.3s;  /* Transition effects */
-    }
-
-    .navbar-right.active {
-        display: flex; /* Show when the hamburger menu is clicked */
-        opacity: 1;  /* Fully visible */
-        transform: translateY(0);  /* Reset to its default position */
+        text-align: center;
     }
 
     .menu-icon {
-        display: block; /* Show the hamburger icon in mobile */
+        display: block;
     }
 }

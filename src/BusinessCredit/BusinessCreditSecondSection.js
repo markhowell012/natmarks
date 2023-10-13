@@ -3,35 +3,31 @@ import './BusinessCreditSecondSection.css';
 import checkmark from '../images/checkmark.svg';
 
 const BusinessCreditSecondSection = () => {
+  const criteriaList = [
+    'Based in the U.S.',
+    '600+ personal FICO score',
+    '$100,000+ in annual revenue',
+    'Business checking account',
+    'Ideally 6+ months in business',
+  ];
+  
   return (
-    <div className="qualificationWrapper">
-      <div className="titleWrapper">
-        <h2>Do I qualify?</h2>
+    <section className="qualification">
+      <div className="qualification__title">
+        <h2>Eligibility Criteria</h2>
       </div>
-      <div className="criteriaWrapper">
-        <div className="criteriaItem">
-          <img src={checkmark} alt="checkmark" />
-          <h4>Based in the U.S.</h4>
-        </div>
-        <div className="criteriaItem">
-          <img src={checkmark} alt="checkmark" />
-          <h4>600+ personal FICO score</h4>
-        </div>
-        <div className="criteriaItem">
-          <img src={checkmark} alt="checkmark" />
-          <h4>$100,000+ in annual revenue</h4>
-        </div>
-        <div className="criteriaItem">
-          <img src={checkmark} alt="checkmark" />
-          <h4>Business checking account</h4>
-        </div>
-        <div className="criteriaItem">
-          <img src={checkmark} alt="checkmark" />
-          <h4>Ideally 6+ months in business</h4>
-        </div>
+      <div className="qualification__criteria">
+        {criteriaList.map((criteria, index) => (
+          <div key={index} className="criteria__item">
+            <img src={checkmark} alt="checkmark" />
+            <h4>{criteria}</h4>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+
 
 export default BusinessCreditSecondSection;

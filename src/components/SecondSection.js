@@ -1,28 +1,39 @@
-import React from 'react'
-import './SecondSection.css'
-import locIcon from '../images/loc-icon-2.svg'
-import payrollIcon from '../images/payroll-icon.svg'
-import rocketIcon from '../images/rocket-icon.svg'
+import React from 'react';
+import './SecondSection.css';
+import locIcon from '../images/loc-icon-2.svg';
+import payrollIcon from '../images/payroll-icon.svg';
+import rocketIcon from '../images/rocket-icon.svg';
+
 function SecondSection() {
+  const benefits = [
+    {
+      icon: rocketIcon,
+      title: "Quick application",
+      description: "Credit decisions in as little as 3 minutes.",
+    },
+    {
+      icon: locIcon,
+      title: "Fast access to funds",
+      description: "Funds available as soon as the next business day.",
+    },
+    {
+      icon: payrollIcon,
+      title: "Flexible repayment terms",
+      description: "Choose your repayment plan with each draw.",
+    },
+  ];
+
   return (
-    <div className="second-section">
-        <div className="benefit">
-            <img style={{backgroundColor: 'rgb(248,189,170)', borderRadius: '5px'}} src={rocketIcon} alt='rocket' className="benefit-icon"/>
-            <p className="benefit-title">Quick application</p>
-            <p className="benefit-description">Applying is quick and easy, and you can get a credit decision in as little as 3 minutes.</p>
+    <section className="second-section">
+      {benefits.map((benefit, index) => (
+        <div key={index} className="benefit">
+          <img src={benefit.icon} alt={benefit.title} className="benefit-icon"/>
+          <h3 className="benefit-title">{benefit.title}</h3>
+          <p className="benefit-description">{benefit.description}</p>
         </div>
-        <div className="benefit">
-            <img style={{backgroundColor: 'rgb(146,219,244)', borderRadius: '5px'}} src={locIcon} alt='loc' className="benefit-icon"/>
-            <p className="benefit-title">Fast access to funds</p>
-            <p className="benefit-description">Funds can be available as soon as the next business day if approved.</p>
-        </div>
-        <div className="benefit">
-            <img style={{backgroundColor: 'rgb(253,212,97)', borderRadius: '5px'}} src={payrollIcon} alt='payroll' className="benefit-icon"/>
-            <p className="benefit-title">Flexible repayment terms</p>
-            <p className="benefit-description">Choose your repayment plan each time you draw funds—with no prepayment penalty.</p>
-        </div>
-    </div>
-  )
+      ))}
+    </section>
+  );
 }
 
-export default SecondSection
+export default SecondSection;
