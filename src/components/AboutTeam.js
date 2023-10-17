@@ -3,14 +3,14 @@ import './AboutTeam.css';
 import jimmy from '../images/jimmy.jpg';
 import chris from '../images/chris.jpg';
 import tony from '../images/tony.jpg';
-import don from '../images/don.jpg';
+// import don from '../images/don.jpg';
 import alex from '../images/alex.jpeg';
 import james from '../images/james.webp';
 import diana from '../images/diana.webp';
 import { useNavigate } from 'react-router-dom';
 
 function AboutTeam() {
-
+ 
   const navigate = useNavigate()
 
   const preventRightClick = (e) => {
@@ -29,7 +29,6 @@ function AboutTeam() {
         <ul className="team-list">
           {[{ img: chris, alt: "Chris Chutter", title: "CEO", name: "Chris Chutter" },
             { img: tony, alt: "Tony Carso", title: "VP Of Sales", name: "Tony Carso" },
-            { img: don, alt: "Don Walker", title: "Head Underwriter", name: "Don Walker" },
             { img: jimmy, alt: "Alex Star", title: "Line Of Credit Operator", name: "Alex Star" },
             { img: alex, alt: "Jimmy Cook", title: "Funding Manager", name: "Jimmy Cook" },
             { img: james, alt: "Bill Baker", title: "GM Of Banking", name: "Bill Baker" },
